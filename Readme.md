@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Станислав Гвоздь](https://up.htmlacademy.ru/htmlcss/30/user/1355873).
-* Наставник: `Неизвестно`.
+* Наставник: [Юрий Михин](https://htmlacademy.ru/profile/undgrnd).
 
 ---
 
