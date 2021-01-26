@@ -7,14 +7,17 @@
 	<title>HTML Academy: Девайс</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="favicon.ico">
+	<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 </head>
-
 <body>
 	<header class="header">
 		<h1 class="visually-hidden">Интернет-магазин Девайс</h1>
-		<div class="container">
+		<div class="container header-container">
+			<a href="#">
+				<img src="img/logo.svg" class="header-logo" alt="Логотип компании DEVICE" width="163" height="35">
+			</a>
 			<div class="header-info">
-				<a class="logo">DEVICE</a>
 				<div class="header-info_top">
 					<form action="url" class="header-form">
 						<label for="header-form_label"></label>
@@ -35,8 +38,9 @@
 					</ul>
 				</div>
 				<div class="header-info_bottom">
+					<input type="radio" id="submenu" name="submenu">
+					<label for="submenu" class="submenu-label"></label>
 					<ul class="catalog-list">
-						<!-- <input type="radio" name="submenu"> -->
 						<li>
 							<a href="catalog.html" class="catalog-list_item link">Каталог товаров</a>
 							<ul class="subcatalog-list">
@@ -61,8 +65,6 @@
 							</ul>
 						</li>
 					</ul>
-
-
 					<ul class="info-list">
 						<li>
 							<a href="#" class="catalog-list_link link">Доставка</a>
@@ -78,126 +80,201 @@
 			</div>
 		</div>
 	</header>
-
 	<main>
-
 		<section>
-			<div class="container">
+			<div class="container slider-container">
 				<h2 class="visually-hidden">Рекламный слайдер</h2>
 				<div class="slider">
-					<!-- <input type="radio" name="r" id="r1" checked>
-					<input type="radio" name="r" id="r2">
-					<input type="radio" name="r" id="r3"> -->
-
-					<div class="slide">
+					<input type="radio" name="r" id="r1" class="visually-hidden" checked>
+					<input type="radio" name="r" id="r2" class="visually-hidden">
+					<input type="radio" name="r" id="r3" class="visually-hidden">
+					<div class="slide slide-1">
+						<div class="image">
+							<img src="img/slider-1-1.png" alt="" class="slide-image" width="384" height="486">
+						</div>
 						<div class="content">
 							<div class="slide-text">
-								<p class="slide-text_slogan">Делай селфи,<br> как Бен Стиллер!</p>
-								<p class="slide-text_description">Самая длинная палка для селфи доступна в нашем магазине.
+								<h3 class="slide-text_slogan">Делай селфи,<br> как Бен Стиллер!</h3>
+								<p class="slide-text_description">Самая длинная палка для селфи доступна в нашем
+									магазине.
 									Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 							</div>
-	
-							<a href="#">Подробнее</a>
-	
-							<table>
-								<tr class="table-value">
-									<td>8,5 м</td>
-									<td>5 кг</td>
-									<td>Карбон</td>
-								</tr>
-								<tr class="table-characteristic">
-									<td>Длина палки</td>
-									<td>Вес палки</td>
-									<td>Материал</td>
-								</tr>
-							</table>
-	
-						</div>
-						
-					</div>
-					<div class="slide">
-						<div class="slide-image">
-							<img src="img/slider-1-2.png" alt="Смарт часы">
-						</div>
-						<div class="slide-text">
-							<p>Худеем правильно</p>
-							<p>Мотивирующие фитнес-браслеты помогут найти в себе силы
-								не пропускать занятия и соблюдать диету.</p>
-						</div>
-						<div class="button-block">
-							<a href="#">Подробнее</a>
-
-							<table>
-								<tr class="table-value">
-									<td>48 часов</td>
-								</tr>
-								<tr class="table-characteristic">
-									<td>Без подзарядки</td>
-								</tr>
+							<a href="#" class="btn slider-btn">Подробнее</a>
+							<table class="slider-table">
+								<thead>
+									<tr class="table-value">
+										<td>8,5 м</td>
+										<td>5 кг</td>
+										<td>Карбон</td>
+									</tr>
+									<tr class="table-characteristic">
+										<td>Длина палки</td>
+										<td>Вес палки</td>
+										<td>Материал</td>
+									</tr>
+								</thead>
 							</table>
 						</div>
 					</div>
-					<div class="slide">
-						<div class="slide-image">
-							<img src="img/slider-1-3.png" alt="Дрон">
+					<div class="slide slide-2">
+						<div class="image">
+							<img src="img/slider-1-2.png" alt="" class="slide-image" width="334" height="526">
 						</div>
-						<div class="slide-text">
-							<p>Порхает как бабочка, жалит как пчела!</p>
-							<p>Этот обычный, на первый взгляд, квадрокоптер оснащен
-								мощным лазером, замаскированным под стандартную камеру.
-							</p>
+						<div class="content">
+							<div class="slide-text">
+								<h3 class="slide-text_slogan">Худеем <br>правильно!</h3>
+								<p class="slide-text_description">Мотивирующие фитнес-браслеты помогут найти в себе силы
+									<br>не пропускать занятия и соблюдать диету.
+								</p>
+							</div>
+							<a href="#" class="btn slider-btn">Подробнее</a>
+							<table class="slider-table">
+								<thead>
+									<tr class="table-value">
+										<td>48 часов</td>
+									</tr>
+									<tr class="table-characteristic">
+										<td>Без зарядки</td>
+									</tr>
+								</thead>
+							</table>
 						</div>
-						<div class="button-block">
-							<a href="#">Подробнее</a>
-							<table>
-								<tr class="table-value">
-									<td>800 м</td>
-									<td>50 м </td>
-								</tr>
-								<tr class="table-characteristic">
-									<td>Дальность полета</td>
-									<td>Радиус поражения</td>
-								</tr>
+					</div>
+					<div class="slide slide-3">
+						<div class="image">
+							<img src="img/slider-1-3.png" alt="" class="slide-image" width="526" height="334">
+						</div>
+						<div class="content">
+							<div class="slide-text">
+								<h3 class="slide-text_slogan">Порхает как бабочка,<br>жалит как пчела!</h3>
+								<p class="slide-text_description">Этот обычный, на первый взгляд, квадрокоптер оснащен
+									мощным лазером, замаскированным под стандартную камеру.
+								</p>
+							</div>
+							<a href="#" class="btn slider-btn">Подробнее</a>
+							<table class="slider-table">
+								<thead>
+									<tr class="table-value">
+										<td>800 м</td>
+										<td>50 м</td>
+									</tr>
+									<tr class="table-characteristic">
+										<td>Дальность полета</td>
+										<td>Радиус поражения</td>
+									</tr>
+								</thead>
 							</table>
 						</div>
 					</div>
 				</div>
 				<div class="slider-navigation">
-					<label for="r1" class="bar"></label>
-					<label for="r2" class="bar"></label>
-					<label for="r2" class="bar"></label>
+					<label for="r1" class="bar unselectable"></label>
+					<label for="r2" class="bar unselectable"></label>
+					<label for="r3" class="bar unselectable"></label>
 				</div>
 			</div>
 		</section>
-		<section class="popular">
+		<section class="popular-product">
 			<h2 class="visually-hidden">Популярные товары</h2>
 			<div class="container">
-				<div class="product">
-					<div class="product-image">
-						<img src="" alt="#">
-					</div>
-					<h3>Виртуальная реальность</h3>
+				<ul class="product-list">
+					<li>
+						<a href="#">
+							<div class="product">
+								<div class="product-image">
+									<img src="img/popular-1.svg" alt="" width="97" height="55">
+								</div>
+								<h3 class="product-title">Виртуальная реальность</h3>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="product">
+								<div class="product-image">
+									<img src="img/popular-2.svg" alt="" width="86" height="117">
+								</div>
+								<h3 class="product-title">Моноподы<br> для селфи</h3>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="product">
+								<div class="product-image">
+									<img src="img/popular-3.svg" alt="" width="71" height="87">
+								</div>
+								<h3 class="product-title">Экшн-камеры</h3>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="product">
+								<div class="product-image">
+									<img src="img/popular-4.svg" alt="" width="107" height="65">
+								</div>
+								<h3 class="product-title">Фитнес-браслеты</h3>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="product">
+								<div class="product-image">
+									<img src="img/popular-5.svg" alt="" width="56" height="98">
+								</div>
+								<h3 class="product-title">Умные часы</h3>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="product">
+								<div class="product-image">
+									<img src="img/popular-6.svg" alt="" width="132" height="69">
+								</div>
+								<h3 class="product-title">Квадрокоптеры</h3>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="delivery">
+			<h2 class="visually-hidden">Перечень услуг</h2>
+			<div class="container service-container">
+				<div class="service">
+					<ul class="service-list">
+						<li class="service-item btn service-btn service-btn--active">Доставка</li>
+						<li class="service-item btn service-btn">Гарантия</li>
+						<li class="service-item btn service-btn">Кредит</li>
+					</ul>
+				</div>
+				<div class="service-description">
+					<h3 class="service-description_title">Доставка</h3>
+					<p class="service-description_text">
+						Мы с удовольствием доставим ваш товар прямо к вашему
+						подъезду совершенно бесплатно! Ведь мы неплохо
+						заработаем, поднимая его на ваш этаж.
+					</p>
 				</div>
 			</div>
 		</section>
-		<section>
-			<h2 class="visually-hidden">Перечень услуг</h2>
-
-		</section>
-		<section>
-			<div class="container">
+		<section class="logotypes">
+			<div class="container logotypes-container">
 				<h2 class="visually-hidden">Наши партнеры</h2>
-				<div class="image-box">
-					<img src="img/logo-1.png" alt="Логотип компании">
+				<div class="logotypes-box">
+					<img src="img/logo-1.png" alt="" width="260" height="100">
 				</div>
-				<div class="image-box">
-					<img src="img/logo-2.png" alt="Логотип компании">
+				<div class="logotypes-box">
+					<img src="img/logo-2.png" alt="" width="260" height="100">
 				</div>
-				<div class="image-box">
-					<img src="img/logo-3.png" alt="Логотип компании">
+				<div class="logotypes-box">
+					<img src="img/logo-3.png" alt="" width="260" height="100">
 				</div>
-				<div class="image-box">
-					<img src="img/logo-4.png" alt="Логотип компании">
+				<div class="logotypes-box">
+					<img src="img/logo-4.png" alt="" width="260" height="100">
 				</div>
 			</div>
 		</section>
@@ -234,7 +311,7 @@
 		<div class="container">
 			<div class="footer-row-1">
 				<a href="#">
-					<img src="img/logo.svg" alt="Логотип компании ">
+					<img src="img/footer-logo.svg" alt="Логотип компании DEVICE" width="164" height="35">
 				</a>
 				<ul class="user-navigation">
 					<li class="user-navigation_item">
@@ -265,21 +342,21 @@
 				<div class="footer-row-3">
 					<div class="minus"></div>
 					<ul class="footer-list">
-						<li><a href="#">
-
-							</a>
+						<li><a href="#">Facebook
+							<img src="img/icon_facebook.svg" alt="Иконка фейсбука" width="32" height="32">
+						</a>
 						</li>
-						<li><a href="#">
-
-							</a>
+						<li><a href="#">Instagram
+							<img src="img/icon_instagram.svg" alt="Иконка инстаграма" width="32" height="32">
+						</a>
 						</li>
-						<li><a href="#">
-
-							</a>
+						<li><a href="#">Twitter
+							<img src="img/icon_twitter.svg" alt="Иконка твиттера" width="32" height="32">
+						</a>
 						</li>
 					</ul>
-					<a href="#">
-						<img src="img/logo-html.svg" alt="Логотип HTML">
+					<a href="https://htmlacademy.ru/intensive/htmlcss">
+						<img src="img/logo-html.svg" alt="Логотип HTML" width="27" height="34">
 					</a>
 				</div>
 			</div>
