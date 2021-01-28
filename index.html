@@ -10,6 +10,7 @@
 	<link rel="icon" href="favicon.ico">
 	<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 </head>
+
 <body>
 	<header class="header">
 		<h1 class="visually-hidden">Интернет-магазин Девайс</h1>
@@ -26,7 +27,7 @@
 						<button class="header-form_button"><span>Найти</span></button>
 					</form>
 					<ul class="user-navigation">
-						<li class="user-navigation_item">
+						<li class="user-navigation_item user-navigation_item--grow ">
 							<a href="#" class="user-navigation_link user-link">Войти</a>
 						</li>
 						<li class="user-navigation_item">
@@ -66,13 +67,13 @@
 						</li>
 					</ul>
 					<ul class="info-list">
-						<li>
+						<li class="info-list_item">
 							<a href="#" class="catalog-list_link link">Доставка</a>
 						</li>
-						<li>
+						<li class="info-list_item">
 							<a href="#" class="catalog-list_link link">Гарантии</a>
 						</li>
-						<li>
+						<li class="info-list_item">
 							<a href="#" class="catalog-list_link link">Контакты</a>
 						</li>
 					</ul>
@@ -94,7 +95,7 @@
 						</div>
 						<div class="content">
 							<div class="slide-text">
-								<h3 class="slide-text_slogan">Делай селфи,<br> как Бен Стиллер!</h3>
+								<h3 class="slide-text_slogan title">Делай селфи,<br> как Бен Стиллер!</h3>
 								<p class="slide-text_description">Самая длинная палка для селфи доступна в нашем
 									магазине.
 									Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -122,7 +123,7 @@
 						</div>
 						<div class="content">
 							<div class="slide-text">
-								<h3 class="slide-text_slogan">Худеем <br>правильно!</h3>
+								<h3 class="slide-text_slogan title">Худеем <br>правильно!</h3>
 								<p class="slide-text_description">Мотивирующие фитнес-браслеты помогут найти в себе силы
 									<br>не пропускать занятия и соблюдать диету.
 								</p>
@@ -146,7 +147,7 @@
 						</div>
 						<div class="content">
 							<div class="slide-text">
-								<h3 class="slide-text_slogan">Порхает как бабочка,<br>жалит как пчела!</h3>
+								<h3 class="slide-text_slogan  title">Порхает как бабочка,<br>жалит как пчела!</h3>
 								<p class="slide-text_description">Этот обычный, на первый взгляд, квадрокоптер оснащен
 									мощным лазером, замаскированным под стандартную камеру.
 								</p>
@@ -246,18 +247,45 @@
 			<div class="container service-container">
 				<div class="service">
 					<ul class="service-list">
-						<li class="service-item btn service-btn service-btn--active">Доставка</li>
-						<li class="service-item btn service-btn">Гарантия</li>
-						<li class="service-item btn service-btn">Кредит</li>
+						<li class="service-item unselectable">
+							<label for="r4" class=" btn service-btn">Доставка</label>
+						</li>
+						<li class="service-item unselectable">
+							<label for="r5" class=" btn service-btn">Гарантия</label>
+						</li>
+						<li class="service-item unselectable">
+							<label for="r6" class=" btn service-btn">Кредит</label>
+						</li>
 					</ul>
 				</div>
+
 				<div class="service-description">
-					<h3 class="service-description_title">Доставка</h3>
-					<p class="service-description_text">
-						Мы с удовольствием доставим ваш товар прямо к вашему
-						подъезду совершенно бесплатно! Ведь мы неплохо
-						заработаем, поднимая его на ваш этаж.
-					</p>
+					<input type="radio" name="delivery" id="r4" class="visually-hidden" checked>
+					<input type="radio" name="delivery" id="r5" class="visually-hidden">
+					<input type="radio" name="delivery" id="r6" class="visually-hidden">
+					<div class="service-slide slide-4">
+						<h3 class="service-description_title title">Доставка</h3>
+						<p class="service-description_text">
+							Мы с удовольствием доставим ваш товар прямо к вашему <br>
+							подъезду совершенно бесплатно! Ведь мы неплохо <br>
+							заработаем, поднимая его на ваш этаж.
+						</p>
+					</div>
+					<div class="service-slide slide-5">
+						<h3 class="service-description_title title">Гарантия</h3>
+						<p class="service-description_text">
+							Если из-за возгорания купленного у нас товара у вас сгорит дом — <br> не переживайте, мы
+							выдадим
+							вам новый. <br> Товар, не дом, конечно же.
+						</p>
+					</div>
+					<div class="service-slide slide-6">
+						<h3 class="service-description_title title">Кредит</h3>
+						<p class="service-description_text">
+							Залезть в долговую яму стало проще! Кредитные консультанты <br> подберут для вас наиболее
+							выгодные <br> условия кредита. Выгодные для нашего банка, разумеется.
+						</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -278,87 +306,87 @@
 				</div>
 			</div>
 		</section>
-		<div class="container">
-			<section class="info">
+		<div class="container info-container">
+			<section class="info aboutus">
 				<h2 class="visually-hidden">Информация об фирме</h2>
-				<h3>О нас</h3>
-				<p>Огромный выбор гаджетов не оставит равнодушным гика,
-					который есть в каждом из нас.
+				<h3 class="info-title title">О нас</h3>
+				<p class="info-text">Огромный выбор гаджетов не оставит равнодушным гика, <br>который есть в каждом из
+					нас.
 				</p>
-				<p>Мы можем доставить ваш товар в самые отдаленные точки
-					России! DEVICE работает со многими транспортными компаниями:
+				<p class="info-text">Мы можем доставить ваш товар в самые отдаленные точки <br>России! DEVICE работает
+					со многими транспортными компаниями:
 				</p>
-				<ul>
+				<ul class="aboutus-list">
 					<li>Деловые линии</li>
 					<li>Автотрейдинг</li>
 					<li>ЖелДорЭкспедиция</li>
 				</ul>
-				<a href="#">Подробнее о нас</a>
+				<a href="#" class="btn  info-btn">Подробнее о нас</a>
 			</section>
 
-			<section class="contats">
-				<h3>Контакты</h3>
-				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
-					проверить работоспособность покупки. Всякое бывает.</p>
+			<section class="contacts">
+				<h3 class="info-title title">Контакты</h3>
+				<p class="info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>проверить
+					работоспособность покупки. Всякое бывает.</p>
 				<div class="contacts-map">
 					<img src="img/map-1.png" alt="Карта с адресом">
 				</div>
-				<a href="#">Напишите нам</a>
+				<a href="#" class="btn info-btn">Напишите нам</a>
 			</section>
 		</div>
 	</main>
 	<footer>
 		<div class="container">
 			<div class="footer-row-1">
-				<a href="#">
+				<a href="#" class="footer-logo-link">
 					<img src="img/footer-logo.svg" alt="Логотип компании DEVICE" width="164" height="35">
 				</a>
-				<ul class="user-navigation">
+				<ul class="user-navigation footer-user-navigation">
 					<li class="user-navigation_item">
-						<a href="#" class="user-navigation_link user-link">Войти</a>
+						<a href="#" class="user-navigation_link user-link-footer">Войти</a>
 					</li>
 					<li class="user-navigation_item">
-						<a href="#" class="user-navigation_link compare">Сравнить</a>
+						<a href="#" class="user-navigation_link compare-footer">Сравнить</a>
 					</li>
 					<li class="user-navigation_item">
-						<a href="#" class="user-navigation_link basket">Корзина</a>
+						<a href="#" class="user-navigation_link basket-footer">Корзина</a>
 					</li>
 				</ul>
-				<div class="footer-row-w">
-					<span>г. Москва, ул. Строителей, 15</span>
-					<ul class="info-list">
-						<li class="info-list_item">
-							<a href="#" class="catalog-list_link">Доставка</a>
-						</li>
-						<li class="info-list_item">
-							<a href="#" class="catalog-list_link">Гарантии</a>
-						</li>
-						<li class="info-list_item">
-							<a href="#" class="catalog-list_link">Контакты</a>
-						</li>
-					</ul>
-					<a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-				</div>
-				<div class="footer-row-3">
-					<div class="minus"></div>
-					<ul class="footer-list">
-						<li><a href="#">Facebook
+			</div>
+			<div class="footer-row-2">
+				<span>г. Москва, ул. Строителей, 15</span>
+				<ul class="info-list">
+					<li class="info-list_item">
+						<a href="#" class="catalog-list_link">Доставка</a>
+					</li>
+					<li class="info-list_item">
+						<a href="#" class="catalog-list_link">Гарантии</a>
+					</li>
+					<li class="info-list_item">
+						<a href="#" class="catalog-list_link">Контакты</a>
+					</li>
+				</ul>
+				<a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+			</div>
+			<div class="footer-row-3">
+				<span class="minus"></span>
+				<ul class="footer-list">
+					<li class="footer-list_item"><a href="#" class="footer-list_link">Facebook
 							<img src="img/icon_facebook.svg" alt="Иконка фейсбука" width="32" height="32">
 						</a>
-						</li>
-						<li><a href="#">Instagram
+					</li>
+					<li class="footer-list_item"><a href="#" class="footer-list_link">Instagram
 							<img src="img/icon_instagram.svg" alt="Иконка инстаграма" width="32" height="32">
 						</a>
-						</li>
-						<li><a href="#">Twitter
+					</li>
+					<li class="footer-list_item"><a href="#" class="footer-list_link">Twitter
 							<img src="img/icon_twitter.svg" alt="Иконка твиттера" width="32" height="32">
 						</a>
-						</li>
-					</ul>
-					<a href="https://htmlacademy.ru/intensive/htmlcss">
-						<img src="img/logo-html.svg" alt="Логотип HTML" width="27" height="34">
-					</a>
-				</div>
+					</li>
+				</ul>
+				<a href="https://htmlacademy.ru/intensive/htmlcss" class="html-link">
+					<img src="img/logo-html.svg" alt="Логотип HTML" width="27" height="34">
+				</a>
 			</div>
 		</div>
 	</footer>
