@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="favicon.ico">
-	<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 </head>
 
 <body>
@@ -86,9 +85,9 @@
 			<div class="container slider-container">
 				<h2 class="visually-hidden">Рекламный слайдер</h2>
 				<div class="slider">
-					<input type="radio" name="r" id="r1" class="visually-hidden" checked>
-					<input type="radio" name="r" id="r2" class="visually-hidden">
-					<input type="radio" name="r" id="r3" class="visually-hidden">
+					<input type="radio" name="promo-slide" id="promo-slide-1" class="visually-hidden" checked>
+					<input type="radio" name="promo-slide" id="promo-slide-2" class="visually-hidden">
+					<input type="radio" name="promo-slide" id="promo-slide-3" class="visually-hidden">
 					<div class="slide slide-1">
 						<div class="image">
 							<img src="img/slider-1-1.png" alt="" class="slide-image" width="384" height="486">
@@ -100,7 +99,7 @@
 									магазине.
 									Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 							</div>
-							<a href="#" class="btn slider-btn">Подробнее</a>
+							<a href="#" class="button slider-btn">Подробнее</a>
 							<table class="slider-table">
 								<thead>
 									<tr class="table-value">
@@ -128,7 +127,7 @@
 									<br>не пропускать занятия и соблюдать диету.
 								</p>
 							</div>
-							<a href="#" class="btn slider-btn">Подробнее</a>
+							<a href="#" class="button slider-btn">Подробнее</a>
 							<table class="slider-table">
 								<thead>
 									<tr class="table-value">
@@ -152,7 +151,7 @@
 									мощным лазером, замаскированным под стандартную камеру.
 								</p>
 							</div>
-							<a href="#" class="btn slider-btn">Подробнее</a>
+							<a href="#" class="button slider-btn">Подробнее</a>
 							<table class="slider-table">
 								<thead>
 									<tr class="table-value">
@@ -169,9 +168,9 @@
 					</div>
 				</div>
 				<div class="slider-navigation">
-					<label for="r1" class="bar unselectable"></label>
-					<label for="r2" class="bar unselectable"></label>
-					<label for="r3" class="bar unselectable"></label>
+					<label for="promo-slide-1" class="bar unselectable"></label>
+					<label for="promo-slide-2" class="bar unselectable"></label>
+					<label for="promo-slide-3" class="bar unselectable"></label>
 				</div>
 			</div>
 		</section>
@@ -248,21 +247,21 @@
 				<div class="service">
 					<ul class="service-list">
 						<li class="service-item unselectable">
-							<label for="r4" class=" btn service-btn">Доставка</label>
+							<label for="delivery-slide-1" class="button service-btn">Доставка</label>
 						</li>
 						<li class="service-item unselectable">
-							<label for="r5" class=" btn service-btn">Гарантия</label>
+							<label for="delivery-slide-2" class="button service-btn">Гарантия</label>
 						</li>
 						<li class="service-item unselectable">
-							<label for="r6" class=" btn service-btn">Кредит</label>
+							<label for="delivery-slide-3" class="button service-btn">Кредит</label>
 						</li>
 					</ul>
 				</div>
 
 				<div class="service-description">
-					<input type="radio" name="delivery" id="r4" class="visually-hidden" checked>
-					<input type="radio" name="delivery" id="r5" class="visually-hidden">
-					<input type="radio" name="delivery" id="r6" class="visually-hidden">
+					<input type="radio" name="delivery" id="delivery-slide-1" class="visually-hidden" checked>
+					<input type="radio" name="delivery" id="delivery-slide-2" class="visually-hidden">
+					<input type="radio" name="delivery" id="delivery-slide-3" class="visually-hidden">
 					<div class="service-slide slide-4">
 						<h3 class="service-description_title title">Доставка</h3>
 						<p class="service-description_text">
@@ -321,7 +320,7 @@
 					<li>Автотрейдинг</li>
 					<li>ЖелДорЭкспедиция</li>
 				</ul>
-				<a href="#" class="btn  info-btn">Подробнее о нас</a>
+				<a href="#" class="button info-btn">Подробнее о нас</a>
 			</section>
 
 			<section class="contacts">
@@ -331,7 +330,7 @@
 				<div class="contacts-map">
 					<img src="img/map-1.png" alt="Карта с адресом">
 				</div>
-				<a href="#" class="btn info-btn">Напишите нам</a>
+				<a href="#" class="button info-btn">Напишите нам</a>
 			</section>
 		</div>
 	</main>
@@ -354,8 +353,8 @@
 				</ul>
 			</div>
 			<div class="footer-row-2">
-				<span>г. Москва, ул. Строителей, 15</span>
-				<ul class="info-list">
+				<a href="#" class="footer-adres">г. Москва, ул. Строителей, 15</a>
+				<ul class="info-list footer-info-list">
 					<li class="info-list_item">
 						<a href="#" class="catalog-list_link">Доставка</a>
 					</li>
@@ -366,7 +365,7 @@
 						<a href="#" class="catalog-list_link">Контакты</a>
 					</li>
 				</ul>
-				<a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+				<a href="tel:+74954959595" class="footer-phone">Тел.: +7 (495) 495-95-95</a>
 			</div>
 			<div class="footer-row-3">
 				<span class="minus"></span>
@@ -412,6 +411,7 @@
 
 	<section>
 		<h2>Как до нас добраться</h2>
+		<!-- карта -->
 		<!-- карта -->
 		<button type="button">Закрыть</button>
 	</section>
