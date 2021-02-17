@@ -2,7 +2,7 @@
 
 let navigationButton = document.querySelector('.navigation-list_button');
 
-navigationButton.addEventListener('click', () => {
+navigationButton.addEventListener('click', function () {
     navigationButton.classList.toggle('navigation-list_button--active');
 });
 
@@ -18,16 +18,16 @@ let feedbackPopupToggle = document.getElementById('feedback-button');
 let buttonCloseFeedback = document.querySelector('.button-close-feedback');
 
 feedbackPopupToggle.onclick = function () {
-    wrapperPopupFeedback.style.display = "flex";
+    wrapperPopupFeedback.classList.add('popup-wrapper--active');
 };
 
 buttonCloseFeedback.onclick = function () {
-    wrapperPopupFeedback.style.display = "none";
+    wrapperPopupFeedback.classList.remove('popup-wrapper--active');
 }
 
 window.onclick = function (e) {
     if (e.target == wrapperPopupFeedback) {
-        wrapperPopupFeedback.style.display = "none";
+        wrapperPopupFeedback.classList.remove('popup-wrapper--active');
     }
 }
 
@@ -36,15 +36,15 @@ let mapPopupToggle = document.getElementById('map-popup-link');
 let buttonCloseMap = document.querySelector('.button-close-map');
 
 mapPopupToggle.onclick = function () {
-    wrapperPopupMap.style.display = "flex";
+    wrapperPopupMap.classList.add('popup-wrapper--active');
 };
 
 buttonCloseMap.onclick = function () {
-    wrapperPopupMap.style.display = "none";
+    wrapperPopupMap.classList.remove('popup-wrapper--active');
 }
 
 window.onclick = function (e) {
     if (e.target == wrapperPopupMap) {
-        wrapperPopupMap.style.display = "none";
+        wrapperPopupMap.classList.remove('popup-wrapper--active');
     }
 }
