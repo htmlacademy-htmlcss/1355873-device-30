@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>HTML Academy: Девайс</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/min.style.css">
 	<link rel="icon" href="favicon.ico">
 </head>
 
-<body>
+<body class="body">
 	<header class="header">
 		<div class="container header-container">
 			<a href="#">
@@ -22,9 +22,9 @@
 						<label for="header-form_label"></label>
 						<input type="search" id="header-form_label" placeholder="Поиск по сайту"
 							class="header-form_input">
-						<button class="header-form_button"><span>Найти</span></button>
+						<button class="header-form_button" aria-label="Нажмите на Enter для поиска"><span>Найти</span></button>
 					</form>
-					<ul class="user-navigation">
+					<ul class="user-navigation list-reset">
 						<li class="user-navigation_item user-navigation_item--authorization">
 							<a href="#" class="user-navigation_link user-link">Войти</a>
 						</li>
@@ -37,12 +37,12 @@
 					</ul>
 				</div>
 				<nav class="header-navigation">
-					<ul class="navigation-list">
+					<ul class="navigation-list list-reset">
 						<li class="navigation-list_item">
 							<a href="catalog.html" class="navigation-list_link">Каталог товаров</a>
-							<button class="navigation-list_button" aria-label="Открыть"></button>
+							<button class="navigation-list_button" aria-label="Открыть список продуктов"></button>
 							<div class="submenu-wrapper navigation-list_subcatalog-list">
-								<ul class="subcatalog-list">
+								<ul class="subcatalog-list list-reset">
 									<li class="subcatalog_item">
 										<a href="#" class="subcatalog-list_link">Виртуальная реальность</a>
 									</li>
@@ -53,7 +53,7 @@
 										<a href="#" class="subcatalog-list_link">Экшн-камеры</a>
 									</li>
 								</ul>
-								<ul class="subcatalog-list">
+								<ul class="subcatalog-list list-reset">
 									<li class="subcatalog_item">
 										<a href="#" class="subcatalog-list_link">Фитнес-браслеты</a>
 									</li>
@@ -61,7 +61,7 @@
 										<a href="#" class="subcatalog-list_link">Умные часы</a>
 									</li>
 								</ul>
-								<ul class="subcatalog-list">
+								<ul class="subcatalog-list list-reset">
 									<li class="subcatalog_item">
 										<a href="#" class="subcatalog-list_link">Квадрокоптеры</a>
 									</li>
@@ -88,7 +88,7 @@
 			<div class="container">
 				<h2 class="visually-hidden">Рекламный слайдер</h2>
 				<div class="slider">
-					<ul class="slider-list">
+					<ul class="slider-list list-reset">
 						<li class="slider-item slide-1 slide slide--current">
 							<div class="slide-image">
 								<img src="img/slider-1-1.png" alt="" width="384" height="486">
@@ -186,9 +186,9 @@
 		<section class="popular-product">
 			<h2 class="visually-hidden">Популярные товары</h2>
 			<div class="container">
-				<ul class="product-list">
-					<li>
-						<a href="#">
+				<ul class="product-list list-reset">
+					<li class="product-list_item">
+						<a href="#"  class="product-list_link">
 							<div class="product">
 								<div class="product-image">
 									<img src="img/popular-1.svg" alt="" width="97" height="55">
@@ -197,8 +197,8 @@
 							</div>
 						</a>
 					</li>
-					<li>
-						<a href="#">
+					<li class="product-list_item">
+						<a href="#" class="product-list_link">
 							<div class="product">
 								<div class="product-image">
 									<img src="img/popular-2.svg" alt="" width="86" height="117">
@@ -207,8 +207,8 @@
 							</div>
 						</a>
 					</li>
-					<li>
-						<a href="#">
+					<li class="product-list_item">
+						<a href="#" class="product-list_link">
 							<div class="product">
 								<div class="product-image">
 									<img src="img/popular-3.svg" alt="" width="71" height="87">
@@ -217,8 +217,8 @@
 							</div>
 						</a>
 					</li>
-					<li>
-						<a href="#">
+					<li class="product-list_item">
+						<a href="#" class="product-list_link">
 							<div class="product">
 								<div class="product-image">
 									<img src="img/popular-4.svg" alt="" width="107" height="65">
@@ -227,8 +227,8 @@
 							</div>
 						</a>
 					</li>
-					<li>
-						<a href="#">
+					<li class="product-list_item">
+						<a href="#" class="product-list_link">
 							<div class="product">
 								<div class="product-image">
 									<img src="img/popular-5.svg" alt="" width="56" height="98">
@@ -237,8 +237,8 @@
 							</div>
 						</a>
 					</li>
-					<li>
-						<a href="#">
+					<li class="product-list_item">
+						<a href="#" class="product-list_link">
 							<div class="product">
 								<div class="product-image">
 									<img src="img/popular-6.svg" alt="" width="132" height="69">
@@ -254,7 +254,7 @@
 			<h2 class="visually-hidden">Перечень услуг</h2>
 			<div class="container service-container">
 				<div class="service">
-					<ul class="service-list">
+					<ul class="service-list list-reset">
 						<li class="service-item unselectable">
 							<button type="button"
 								class="button service-button service-button-one service-button--current">Доставка</button>
@@ -269,7 +269,7 @@
 				</div>
 
 				<div class="service-description">
-					<ul class="delivery-slider">
+					<ul class="delivery-slider list-reset">
 						<li class="delivery-slider_slide slide-4 delivery-slider_slide--curent">
 							<h3 class="service-description_title title">Доставка</h3>
 							<p class="service-description_text">
@@ -301,7 +301,7 @@
 		<section class="logotypes">
 			<div class="container">
 				<h2 class="visually-hidden">Наши партнеры</h2>
-				<ul class="logotype-list">
+				<ul class="logotype-list list-reset">
 					<li class="logotype-item">
 						<div class="logotypes-box">
 							<img src="img/logo-1.png" alt="" width="260" height="100">
@@ -359,7 +359,7 @@
 				<a href="#" class="footer-logo-link">
 					<img src="img/footer-logo.svg" alt="Логотип компании DEVICE" width="164" height="35">
 				</a>
-				<ul class="user-navigation footer-user-navigation">
+				<ul class="user-navigation footer-user-navigation list-reset">
 					<li class="user-navigation_item">
 						<a href="#" class="user-navigation_link user-link-footer">Войти</a>
 					</li>
@@ -373,7 +373,7 @@
 			</div>
 			<div class="footer-row-2">
 				<a href="#" class="footer-adres">г. Москва, ул. Строителей, 15</a>
-				<ul class="navigation-list footer-navigation-list">
+				<ul class="navigation-list footer-navigation-list list-reset">
 					<li class="navigation-list_item info-list_item">
 						<a href="#" class="navigation-list_link">Доставка</a>
 					</li>
@@ -388,7 +388,7 @@
 			</div>
 			<div class="footer-row-3">
 				<span class="minus"></span>
-				<ul class="footer-list">
+				<ul class="footer-list list-reset">
 					<li class="footer-list_item"><a href="#" class="footer-list_link">Facebook
 							<img src="img/icon_facebook.svg" alt="Иконка фейсбука" width="32" height="32">
 						</a>
@@ -440,8 +440,7 @@
 
 
 
-	<script src="js/script.js"></script>
-	<script src="js/slider-promo.js"></script>
+	<script src="js/min.script.js"></script>
 </body>
 
 </html>
