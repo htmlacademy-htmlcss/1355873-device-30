@@ -35,16 +35,12 @@ html {
 *::after {
     box-sizing: inherit;
 }
-a {
-    color: inherit;
-    text-decoration: none;
-}
-ul {
+.list-reset {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-body {
+.body {
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -93,6 +89,8 @@ body {
     font-size: 18px;
     font-weight: 800;
     line-height: 22px;
+    color: inherit;
+    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     vertical-align: top;
@@ -320,6 +318,7 @@ body {
     display: block;
     padding: 14px 0 14px 30px;
     color: inherit;
+    text-decoration: none;
 }
 .user-navigation_link:hover {
     opacity: 0.6;
@@ -350,6 +349,7 @@ body {
     width: 14px;
     height: 13px;
     background-image: url(../img/basket.svg);
+    background-repeat: no-repeat;
 }
 .navigation-list {
     position: relative;
@@ -364,6 +364,8 @@ body {
     font-size: 18px;
     font-weight: 800;
     line-height: 22px;
+    color: inherit;
+    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.2em;
 }
@@ -389,6 +391,10 @@ body {
 .subcatalog-list {
     margin-top: 10px;
     margin-right: 60px;
+}
+.subcatalog-list_link {
+    color: inherit;
+    text-decoration: none;
 }
 .subcatalog-list .subcatalog_item {
     margin-bottom: 17px;
@@ -542,10 +548,12 @@ body {
     letter-spacing: 0.1em;
     border-collapse: separate;
 }
-td:not(:last-of-type) {
-    padding-right: 27px;
+.table-value td:not(:last-of-type),
+.table-characteristic td:not(:last-of-type) {
+    padding-bottom: 13px;
 }
-td {
+.table-value td,
+.table-characteristic td {
     padding-bottom: 13px;
 }
 .table-value {
@@ -600,6 +608,10 @@ td {
 .product-list {
     display: flex;
     justify-content: space-between;
+}
+.product-list_link {
+    color: inherit;
+    text-decoration: none;
 }
 .product {
     width: 160px;
@@ -718,7 +730,6 @@ td {
     content: "";
     background-image: url(../img/delivery.svg);
     background-repeat: no-repeat;
-    background-position: center;
 }
 .slide-5:before {
     position: absolute;
@@ -729,7 +740,6 @@ td {
     content: "";
     background-image: url(../img/delivery-2.svg);
     background-repeat: no-repeat;
-    background-position: center;
 }
 .slide-6:before {
     position: absolute;
@@ -740,7 +750,6 @@ td {
     content: "";
     background-image: url(../img/delivery-3.svg);
     background-repeat: no-repeat;
-    background-position: center;
 }
 .delivery-slider_slide--curent {
     display: block;
@@ -877,11 +886,15 @@ footer {
     width: 250px;
 }
 .footer-adres {
+    color: inherit;
     -moz-text-align-last: left;
     text-align-last: left;
+    text-decoration: none;
 }
 .footer-phone {
+    color: inherit;
     text-align: right;
+    text-decoration: none;
 }
 .footer-navigation-list {
     display: flex;
@@ -1120,6 +1133,8 @@ footer {
 .breadcrumbs_link {
     position: relative;
     padding: 10px 10px;
+    color: inherit;
+    text-decoration: none;
     opacity: 0.3;
 }
 .breadcrumbs_link:hover {

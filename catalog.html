@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min.style.css">
     <link rel="icon" href="favicon.ico">
 </head>
 
-<body>
+<body class="body">
     <header class="header">
         <div class="container header-container">
             <a href="index.html">
@@ -24,7 +24,7 @@
                             class="header-form_input">
                         <button class="header-form_button"><span>Найти</span></button>
                     </form>
-                    <ul class="user-navigation">
+                    <ul class="user-navigation list-reset">
                         <li class="user-navigation_item user-navigation_item--authorization">
                             <a href="#" class="user-navigation_link user-link">Валентин Петухов</a>
                         </li>
@@ -40,12 +40,12 @@
                     </ul>
                 </div>
                 <nav class="header-navigation">
-                    <ul class="navigation-list">
+                    <ul class="navigation-list list-reset">
                         <li class="navigation-list_item">
                             <a href="catalog.html" class="navigation-list_link">Каталог товаров</a>
                             <button class="navigation-list_button">Открыть</button>
                             <div class="submenu-wrapper navigation-list_subcatalog-list">
-                                <ul class="subcatalog-list">
+                                <ul class="subcatalog-list list-reset">
                                     <li class="subcatalog_item">
                                         <a href="#" class="subcatalog-list_link">Виртуальная реальность</a>
                                     </li>
@@ -56,7 +56,7 @@
                                         <a href="#" class="subcatalog-list_link">Экшн-камеры</a>
                                     </li>
                                 </ul>
-                                <ul class="subcatalog-list">
+                                <ul class="subcatalog-list list-reset">
                                     <li class="subcatalog_item">
                                         <a href="#" class="subcatalog-list_link">Фитнес-браслеты</a>
                                     </li>
@@ -64,7 +64,7 @@
                                         <a href="#" class="subcatalog-list_link">Умные часы</a>
                                     </li>
                                 </ul>
-                                <ul class="subcatalog-list">
+                                <ul class="subcatalog-list list-reset">
                                     <li class="subcatalog_item">
                                         <a href="#" class="subcatalog-list_link">Квадрокоптеры</a>
                                     </li>
@@ -90,7 +90,7 @@
             <h1 class="visually-hidden">Каталог</h1>
             <div class="catalog_breadcrumbs container">
                 <h2 class="catalog_product-name">Моноподы для селфи</h2>
-                <ul class="catalog_breadcrumbs breadcrumbs-list">
+                <ul class="catalog_breadcrumbs breadcrumbs-list list-reset">
                     <li class="breadcrumbs_item"><a href="#" class="breadcrumbs_link">Главная</a></li>
                     <li class="breadcrumbs_item"><a href="#" class="breadcrumbs_link">Каталог товаров</a></li>
                     <li class="breadcrumbs_item"><a class="breadcrumbs_link">Моноподы для селфи</a></li>
@@ -122,7 +122,7 @@
                         <fieldset>
                             <legend class="catalog-form_legend catalog-form_legend-color">Цвет</legend>
                             <h4 class="catalog-form_title">Цвет:</h4>
-                            <ul class="catalog-filter-list">
+                            <ul class="catalog-filter-list list-reset">
                                 <li class="catalog-filter-item">
                                     <label class="custom-input" for="black">Черный
                                         <input type="checkbox" id="black" name="color-black" checked>
@@ -158,7 +158,7 @@
                         <fieldset>
                             <legend class="catalog-form_legend">Bluetooth</legend>
                             <h4 class="catalog-form_title">Bluetooth:</h4>
-                            <ul class="catalog-filter-list catalog-filter-list--bluetooth">
+                            <ul class="catalog-filter-list catalog-filter-list--bluetooth list-reset">
                                 <li class="catalog-filter-item">
                                     <label class="custom-input" for="yes">Есть
                                         <input type="radio" name="bluetooth" id="yes" checked>
@@ -179,7 +179,7 @@
                 <div class="catalog_grid">
                     <div class="catalog-grid-sort">
                         <h3>Сортировка:</h3>
-                        <ul class="catalog-grid-sort-buttons sort-buttons-list">
+                        <ul class="catalog-grid-sort-buttons sort-buttons-list list-reset">
                             <li class="sort-buttons-list_item sort-buttons-list_item--active">
                                 <button type="button" class="sort-buttons-list_button">По цене</button>
                             </li>
@@ -195,7 +195,7 @@
                             <button type="button" class="arrow arrow-bottom arrow-bottom--active">Вниз</button>
                         </div>
                     </div>
-                    <ul class="catalog-product">
+                    <ul class="catalog-product list-reset">
                         <li class="catalog-product_item">
                             <article class="product-cart cart">
                                 <div class="cart-popup">
@@ -259,7 +259,7 @@
                         </li>
                     </ul>
                 </div>
-                <ul class="catalog_pagination">
+                <ul class="catalog_pagination list-reset">
                     <li class="catalog-pagination_item">
                         <button type="button" class="catalog-pagination_button catalog-pagination_button--active"
                             disabled>Назад</button>
@@ -286,7 +286,7 @@
                 <a href="#" class="footer-logo-link">
                     <img src="img/footer-logo.svg" alt="Логотип компании DEVICE" width="164" height="35">
                 </a>
-                <ul class="user-navigation footer-user-navigation">
+                <ul class="user-navigation footer-user-navigation list-reset">
                     <li class="user-navigation_item">
                         <a href="#" class="user-navigation_link user-link-footer">Войти</a>
                     </li>
@@ -300,7 +300,7 @@
             </div>
             <div class="footer-row-2">
                 <a href="#" class="footer-adres">г. Москва, ул. Строителей, 15</a>
-                <ul class="navigation-list footer-navigation-list">
+                <ul class="navigation-list footer-navigation-list list-reset">
                     <li class="navigation-list_item info-list_item">
                         <a href="#" class="navigation-list_link">Доставка</a>
                     </li>
@@ -315,7 +315,7 @@
             </div>
             <div class="footer-row-3">
                 <span class="minus"></span>
-                <ul class="footer-list">
+                <ul class="footer-list list-reset">
                     <li class="footer-list_item"><a href="#" class="footer-list_link">Facebook
                             <img src="img/icon_facebook.svg" alt="Иконка фейсбука" width="32" height="32">
                         </a>
@@ -335,7 +335,7 @@
             </div>
         </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/min.script.js"></script>
 </body>
 
 </html>
